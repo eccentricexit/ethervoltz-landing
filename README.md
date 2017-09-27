@@ -8,4 +8,4 @@ It contains basic information about the project and will be updated on the futur
 # License
 MIT
 # Acknowledgements
-Special thanks to [Blaz Robar](http://www.blazrobar.com) and [Peter Finlan](http://www.peterfinlan.com) for the initial design and code on which this website is based on.
+Special thanks to Blackrock Digital for the initial design and code on which this website is based on.
