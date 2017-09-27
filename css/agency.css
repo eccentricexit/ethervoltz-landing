@@ -233,7 +233,8 @@ section {
     display: block;
     position: relative;
     max-width: 400px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    background: #eeeeee; }
     #portfolio .portfolio-item .portfolio-link .portfolio-hover {
       background: rgba(53, 77, 254, 0.1);
       position: absolute;
