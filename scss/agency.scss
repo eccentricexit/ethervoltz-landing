@@ -145,9 +145,9 @@ header {
         }
         .intro-heading {
             @include heading-font;
-            font-weight: 700;
-            font-size: 50px;
-            line-height: 50px;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 40px;
             margin-bottom: 25px;
         }
     }
@@ -181,7 +181,7 @@ header {
 section {
     padding: 100px 0;
     h2.section-heading {
-        font-size: 40px;
+        font-size: 30px;
         margin-top: 0;
         margin-bottom: 15px;
     }
