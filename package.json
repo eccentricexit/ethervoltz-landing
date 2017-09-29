@@ -1,0 +1,97 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "startbootstrap-agency",
+        "scope": null,
+        "escapedName": "startbootstrap-agency",
+        "name": "startbootstrap-agency",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/home/rigel/Documents/Education/Faculdade/TCC/EtherVoltz/ethervoltz-landing"
+    ]
+  ],
+  "_from": "startbootstrap-agency@latest",
+  "_id": "startbootstrap-agency@4.0.0-alpha",
+  "_inCache": true,
+  "_location": "/startbootstrap-agency",
+  "_nodeVersion": "6.2.2",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/startbootstrap-agency-4.0.0-alpha.tgz_1488827899019_0.6334623601287603"
+  },
+  "_npmUser": {
+    "name": "startbootstrap",
+    "email": "feedback@startbootstrap.com"
+  },
+  "_npmVersion": "4.3.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "startbootstrap-agency",
+    "scope": null,
+    "escapedName": "startbootstrap-agency",
+    "name": "startbootstrap-agency",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/startbootstrap-agency/-/startbootstrap-agency-4.0.0-alpha.tgz",
+  "_shasum": "166d6238a1b0916db3251550b9b2c718bd1f37d4",
+  "_shrinkwrap": null,
+  "_spec": "startbootstrap-agency",
+  "_where": "/home/rigel/Documents/Education/Faculdade/TCC/EtherVoltz/ethervoltz-landing",
+  "author": {
+    "name": "Start Bootstrap"
+  },
+  "bugs": {
+    "url": "https://github.com/BlackrockDigital/startbootstrap-agency/issues"
+  },
+  "dependencies": {},
+  "description": "[Agency](http://startbootstrap.com/template-overviews/agency/) is a one page agency portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a respons",
+  "devDependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "browser-sync": "^2.13.0",
+    "font-awesome": "^4.6.3",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-header": "^1.8.7",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.4",
+    "jquery": "^3.1.1",
+    "tether": "^1.4.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "166d6238a1b0916db3251550b9b2c718bd1f37d4",
+    "tarball": "https://registry.npmjs.org/startbootstrap-agency/-/startbootstrap-agency-4.0.0-alpha.tgz"
+  },
+  "gitHead": "0d90be85ddd8b1af655f34c39ee4c454db629341",
+  "homepage": "http://startbootstrap.com/template-overviews/agency",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
+  },
+  "maintainers": [
+    {
+      "name": "startbootstrap",
+      "email": "feedback@startbootstrap.com"
+    }
+  ],
+  "name": "startbootstrap-agency",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackrockDigital/startbootstrap-agency.git"
+  },
+  "scripts": {},
+  "title": "Agency",
+  "version": "4.0.0-alpha"
+}

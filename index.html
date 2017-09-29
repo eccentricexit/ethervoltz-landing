@@ -1,141 +1,687 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EtherVotes | Fraudless democracies on the blockchain</title>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
-    <link href="css/styles.css?v=1.6" rel="stylesheet">
-    <link href="css/queries.css?v=1.6" rel="stylesheet">
-    <link href="css/jquery.fancybox.css" rel="stylesheet">
-    <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
-    </head>
-    <body>
-      <div id="particles-js"></div>
-      <section class="navigation above-particles">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
-              <nav class="pull">
-                <ul class="top-nav">
-                  <li><a href="#hero">Home <span class="indicator">
-                    <i class="fa fa-angle-right"></i></span></a></li>
-                  <li><a href="#why">Why? <span class="indicator">
-                    <i class="fa fa-angle-right"></i></span></a></li>
-                  <li><a href="#features">Features <span class="indicator">
-                    <i class="fa fa-angle-right"></i></span></a></li>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>EtherVoltz - Blockchain Para Eleições Auditáveis</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional fonts for this theme -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this theme -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+    <!-- Temporary navbar container fix until Bootstrap 4 is patched -->
+    <style>
+    .navbar-toggler {
+        z-index: 1;
+    }
+
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style>
+
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse" id="mainNav">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">EtherVoltz</a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#portfolio">Introdução</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#services">Recursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#about">Como Funciona?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#team">Equipe</a>
+                    </li>
                 </ul>
-              </nav>
             </div>
-          </div>
         </div>
-      </section>
-      <section class="hero" >
-        <div class="container above-particles" id="hero">
-          <div class="row above-particles">
-            <div class="col-md-12 text-right">
-              <a href="#"><i class="fa fa-navicon fa-2x nav_slide_button"></i></a>
-            </div>
-          </div>
-          <div class="row above-particles">
-            <div class="col-md-8 col-md-offset-2 text-center">
-              <h1 class="animated bounceInDown">Fraudless elections on the blockchain.</h1>
-              <p class="animated fadeInUpDelay">EtherVotes is a distributed,
-                 serverless application that guarantees zero-down time, DDoS
-                 resistance and blockchain security against election frauds.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="download-now" id="why" >
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 wp1">
-              <h1 style="color:#000">
-              Centralized solutions are vulnerable
-              </h1>
-              <p>Technology has evolved tremendously with the rise of the
-                internet. Governance has not. This software is a distributed
-                application that aims to implement fradless elections in a way
-                that guarantees zero-downtime, DDoS resistance and fraud
-                resistance.</p>
+    </nav>
 
-              <p>Wouldn't it be nice to vote on presidential elections from your
-                 smartphone? Well, centralized databases for storing election
-                 votes are extremely valuable for hackers and people attempting
-                 election frauds.</p>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">EtherVoltz</div>
+                <div class="intro-heading">Blockchain Para Eleições Auditáveis</div>
+                <a href="#portfolio" class="page-scroll btn btn-xl">Conte-me mais</a>
+            </div>
+        </div>
+    </header>
 
-              <p>This is why a decentralized, cryptographically secured solution
-                 is the way.</p>
-              <a href="https://github.com/mtsalenc/ethervotes" class="download-btn">
-                Visit the project page.</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="features" id="features">
+    <!-- Portfolio Grid -->
+    <section id="portfolio" >
         <div class="container">
-          <div class="row">
-            <div class="col-md-6 features-leftcol wp2">
-              <h1>Serverless</h1>
-              <p class="margin-bottom">There is no IP for attacker to target. Files
-                 are stored on Swarm. This very page was served without
-                 a centralized server.</p>
-              <h1>Fraudless</h1>
-              <p>Fraudless. Blockchain technology guarantees that no one
-                  can issue votes out of thin air.</p>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Eleições Centralizadas Não São Confiáveis.</h2>
+                    <h3 class="section-subheading text-muted">Confira o portifólio das eleições no Brasil.</h3>
+                </div>
             </div>
-            <div class="col-md-6 features-rightcol wp3">
-              <h1>Liquid democracies</h1>
-              <p class="margin-bottom">The project is being built with liquid
-                democracies in mind, in the future, general elections will be just one
-                of any issue to be voted.</p>
-              <h1>Transparent</h1>
-              <p>The contracts that govern the application are open
-                 for anyone to audit.</p>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item text-center text-danger">
+                    <a href="#portfolioModal1" class="portfolio-link text-danger" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-3x"></i>
+                            </div>
+                        </div>
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-stack-3x fa-clock-o text-danger"></i>
+                        </span>
+                    <div class="portfolio-caption">
+                        <h4>Anacronismo</h4>
+                        <p class="text-muted">Resultados da eleição recebidos para apuração antes do início da votação.</p>
+                    </div></a>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item text-center text-danger">
+                    <a href="#portfolioModal2" class="portfolio-link text-danger" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-3x"></i>
+                            </div>
+                        </div>
+                        <span class="fa-stack fa-4x">
+                          <i class="fa fa-stack-3x fa-user-secret text-danger"></i>
+                        </span>
+                    <div class="portfolio-caption">
+                        <h4>Burla Intencional</h4>
+                        <p class="text-muted">Urna que foi sorteada para o teste obrigatório foi substituída por outra na hora do teste</p>
+                    </div></a>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item text-center text-danger">
+                    <a href="#portfolioModal3" class="portfolio-link text-danger" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-3x"></i>
+                            </div>
+                        </div>
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-stack-3x fa-legal text-danger"></i>
+                        </span>
+                    <div class="portfolio-caption">
+                        <h4>Evidência de Procedimento Ilegal</h4>
+                        <p class="text-muted">Arquivos de Log apontam que urnas haviam sido carregadas fora da cerimônia oficial.</p>
+                    </div></a>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item text-center text-danger">
+                    <a href="#portfolioModal4" class="portfolio-link text-danger" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa  fa-3x"></i>
+                            </div>
+                        </div>
+                        <span class="fa-stack fa-4x">
+                          <i class="fa fa-stack-3x fa-empire text-danger"></i>
+                        </span>
+                    <div class="portfolio-caption">
+                        <h4>Hostilidade</h4>
+                        <p class="text-muted">Professor é cobrado R$2 milhões após encontrar falhas de segurança na urna.</p>
+                    </div></a>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item text-center text-danger">
+                    <a href="#portfolioModal5" class="portfolio-link text-danger" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa  fa-3x"></i>
+                            </div>
+                        </div>
+                        <span class="fa-stack fa-4x">
+                          <i class="fa fa-stack-3x fa-ban text-danger"></i>
+                        </span>
+                    <div class="portfolio-caption">
+                        <h4>Censura</h4>
+                        <p class="text-muted">Tabelas de Hash calculadas a portas fechadas e fora de uma cerimônia oficial. </p>
+                    </div></a>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item text-center text-danger">
+                    <a href="#portfolioModal6" class="portfolio-link text-danger" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa  fa-3x"></i>
+                            </div>
+                        </div>
+                        <span class="fa-stack fa-4x">
+                          <i class="fa fa-stack-3x  fa-thumbs-o-down text-danger"></i>
+                        </span>
+                    <div class="portfolio-caption">
+                        <h4>Um.</h4>
+                        <p class="text-muted">O número de países que ainda utilizam a vulnerável urna de primeira geração.</p>
+                    </div></a>
+                </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <a href="#" class="try-btn">Star the project on Github.</a>
-            </div>
-          </div>
         </div>
-      </section>
-      <footer>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="bg-faded" >
         <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <a href="https://github.com/mtsalenc/ethervotes"><i class="fa fa-github"></i></a>
-              <p class="footer-credit">Matheus Faria de Alencar</a></p>
-              <p class="footer-credit">Special thanks to <a href="http://www.blazrobar.com">
-                Blaz Robar</a> and <a href="http://www.peterfinlan.com">Peter Finlan</a></p>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">A Solução: Descentralizar</h2>
+                    <h3 class="section-subheading text-muted">EtherVoltz transforma seu voto em uma criptomoeda.</h3>
+                </div>
             </div>
-          </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Descentralizado</h4>
+                    <p class="text-muted">EtherVoltz é uma aplicação distribuída que opera sobre um blockchain que não é controlado por uma autoridade central. Assim como não existe um servidor e uma empresa ou pessoa que mantém o Bitcoin, EtherVoltz também não fica sob controle do administrador.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-check-circle-o fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Independente de Software</h4>
+                    <p class="text-muted">EtherVoltz sugere a utilização de uma versão modificada do <a href="www.brunazo.eng.br/voto-e/textos/modelosUE.htm">VICE</a> utilizado em urnas de segunda geração, que inclui o hash da transação. Assim, um laço é criado entre a prova digital e a prova física.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Auditável</h4>
+                    <p class="text-muted">Todas as alteraçõe de estado da aplicação, são gravadas em um banco de dados que não tem dono: o blockchain Ethereum. Assim, qualquer pessoa pode auditar a eleição através de um explorador de blocos. <a href="https://rinkeby.etherscan.io/token/0x063407a72493c8058b415f50076bc990c3927958">Confira a simulação realizada em Setembro de 2017</a></p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-chain fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Imutável</h4>
+                    <p class="text-muted">O blockchain Ethereum não pode ser alterado. O estado da aplicação é mantido por milhares de computadores ao redor do globo.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Seguro</h4>
+                    <p class="text-muted">Cada carteira urna recebe o número de moedas igual ao número de eleitores que votam na urna e votos só podem ser realizados dentro da janela de tempo especificada na aplicação. Não é possível forjar votos e nem contabilizar votos fora do período eleitoral.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Disponível</h4>
+                    <p class="text-muted">A aplicação não pode ser vítima de ataques de negação de serviço, seu código não pode ser alterado e não pode ser retirado do ar.</p>
+                </div>
+            </div>
         </div>
-      </footer>
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-      <script src="js/jquery.fancybox.pack.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/scripts.js?v=1.7"></script>
-      <script src="js/jquery.flexslider.js"></script>
-      <script src="js/jquery.smooth-scroll.js"></script>
-      <script src="js/modernizr.js"></script>
-      <script src="js/waypoints.min.js"></script>
-      <script src="js/particles.js"></script>
-      <script src="js/app.js"></script>
-    </body>
-  </html>
+    </section>
+
+    <!-- About -->
+    <section id="about" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Como Funciona?</h2>
+                    <h3 class="section-subheading text-muted">O Ethervoltz transforma o voto do eleitor em uma criptomoeda que existe apenas para este fim. <br/> Votos não podem ser criados ou destruídos e são rastreáveis desde o administrador até o candidato.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <span class="fa-stack fa-5x rounded-circle img-fluid align-middle" ><i class="fa fa-stack-1x fa-file-text-o"></i></span>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Início: Auditoria.</h4>
+                                    <h4 class="subheading"></h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Muito antes do período eleitoral, o código fonte da aplicação é disponibilizado ao grande público para auditorias.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <span class="fa-stack fa-5x rounded-circle img-fluid align-middle" ><i class="fa fa-stack-1x  fa-bullhorn"></i></span>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4></h4>
+                                    <h4 class="subheading">O código fonte auditado pelo público é colocado no ar pelo administrador.</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">O adminstrador também anuncia, em cerimônia oficial, o endereço da aplicação, para que o grande público possa auditar a aplicação e transferências de votos.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <span class="fa-stack fa-5x rounded-circle img-fluid align-middle" ><i class="fa fa-stack-1x fa-check-square-o"></i></span>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Definição de Candidatos e Urnas.</h4>
+                                    <h4 class="subheading"></h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Quando chega a data de configuração (definido no código da aplicação), o administrador adiciona urnas e candidatos e anuncia o endereço destes para o grande público.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <span class="fa-stack fa-5x rounded-circle img-fluid align-middle" ><i class="fa fa-stack-1x fa-bolt"></i></span>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Urnas recebem as criptomoedas.</h4>
+                                    <h4 class="subheading"></h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">O administrador transfere para as urnas, precisamente o número de criptomoedas que serão utilizadas.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <span class="fa-stack fa-5x rounded-circle img-fluid align-middle" ><i class="fa fa-stack-1x fa-thumbs-o-up"></i></span>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4></h4>
+                                    <h4 class="subheading">Votação</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">O voto é a transferência do voto da urna para o candidato.<br/> Do ponto de vista do eleitor, o voto é similar a eleição tradicional. A complexidade fica escondida na aplicação.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <span class="fa-stack fa-5x rounded-circle img-fluid align-middle" ><i class="fa fa-stack-1x  fa-search"></i></span>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Mais Auditorias.</h4>
+                                    <h4 class="subheading"></h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Após o fim das eleições, qualquer um pode inspecionar o proesso eleitoal através de um navegador de blocos.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <a href="https://rinkeby.etherscan.io/token/0x063407a72493c8058b415f50076bc990c3927958"><div class="timeline-image">
+                                <h4>Confira
+                                    <br>Resultados
+                                    <br>De Testes</h4>
+                            </div></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="bg-faded">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Equipe</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/3.jpg" class="mx-auto rounded-circle" alt="">
+                        <h4>Thiago Faria de Alencar</h4>
+                        <p class="text-muted">Consultoria Técnica</p>
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item"><a href="https://de.linkedin.com/in/thiagoalencar"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="https://github.com/tfalencar"><i class="fa fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/1.jpg" class="mx-auto rounded-circle" alt="">
+                        <h4>Matheus Faria de Alencar</h4>
+                        <p class="text-muted">Desenvolvedor</p>
+                        <ul class="list-inline social-buttons">
+                          <li class="list-inline-item"><a href="https://br.linkedin.com/in/mtsalenc "><i class="fa fa-linkedin"></i></a></li>
+                          <li class="list-inline-item"><a href="https://github.com/mtsalenc/"><i class="fa fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/2.jpg" class="mx-auto rounded-circle" alt="">
+                        <h4>Marize Simões</h4>
+                        <p class="text-muted">Orientadora Acadêmica</p>
+                        <ul class="list-inline social-buttons">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Powered by -->
+    <aside class="clients" >
+        <div class="container">
+            <span class="text-center"><h4 style="margin-top:30px; margin-bottom:-10px">Powered by</h4></span>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/logos/envato.jpg" class="img-fluid d-block mx-auto" alt="">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/logos/designmodo.jpg" class="img-fluid d-block mx-auto" alt="">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/logos/themeforest.jpg" class="img-fluid d-block mx-auto" alt="">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/logos/creative-market.jpg" class="img-fluid d-block mx-auto" alt="">
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright"></span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://github.com/mtsalenc/ethervoltz">Github</a></li>
+                        <li class="list-inline-item"><a href="https://github.com/mtsalenc/ethervoltz-paper/blob/master/ethervoltz-paper-pt.md">Documentação</a></li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li class="list-inline-item"><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>O Caso Marília, SP - 2004</h2>
+                                <p class="item-intro text-muted">Resultados recebidos para apuração antes do início da votação.</p>
+                                <!-- <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt=""> -->
+                                <p>Em auditoria, os Arquivos de Espelhos de Boletins de Urna da 400º Zona Eleitoral indicavam que muitas seções eleitorais tiveram seus resultados recebidos para apuração antes do início da votação. Dois processos judiciais foram iniciados decorrentes destas constatações, ambos encerraram em 2009 sem julgamento final.</p>
+                                <ul class="list-inline">
+                                    <li>Fonte: 1º Relatório do Comitê Multidisciplinar Independente - pg 27.</li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>O Caso Itajaí, SC - 2008</h2>
+                                <p class="item-intro text-muted">A Urna que foi sorteada para o teste obrigatório foi substituída por outra na hora do teste</p>
+                                <!-- <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt=""> -->
+                                <p>Foi constatada burla intencional na cerimônia de carga e lacração das urnas em que nenhuma urna preparada para a votação passou pelo teste obrigatório prescrito pelo Art. 32 da Res. TSE 22.712/08. Um caso foi o da 97ª Zona Eleitoral onde a urna da seção 236 que foi sorteada para o teste obrigatório foi substituída por outra na hora do teste, preparada exclusivamente para este fim. A urna que foi utilizada para o teste foi posteriormente colocada à parte e recarregada, procedimento que destruiu eventuais provas nela gravadas.</p>
+                                <ul class="list-inline">
+                                    <li>Fonte: 1º Relatório do Comitê Multidisciplinar Independente - pg 34.</li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>O Caso Diadema, SP - 2000</h2>
+                                <p class="item-intro text-muted">Arquivos de Log apontam que todas as urnas haviam sido carregadas fora da cerimônia oficial.</p>
+                                <!-- <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt=""> -->
+                                <p>Foram negados a todos os partidos que solicitaram o acesso aos registros digitais dos votos realizados nas urnas eletrônicas. Somente 9 meses após a eleição os partidos obtiveram acesso, não aos registros dos votos, mas aos Arquivos de LOG das urnas que apontaram que todas as urnas haviam sido carregadas fora da cerimônia oficial de carga e lacramento das urnas.</p>
+                                <ul class="list-inline">
+                                    <li>Fonte: 1º Relatório do Comitê Multidisciplinar Independente - pg 24.</li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>O Caso Alagoas - 2006</h2>
+                                <p class="item-intro text-muted">Professor é cobrado R$2 milhões após encontrar falhas de segurança na urna.</p>
+                                <!-- <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt=""> -->
+                                <p>Diversas irregularidades nos arquivos gerados pelas urnas foram detectadas por auditores externos. Frente as evidências, o administrador negou acesso aos arquivos solicitados pelos auditores e transferiu ao requerente uma cobrança antecipada no valor de R$ 2 milhões para que fosse desenvolvida uma perícia das urnas. Diante do não pagamento do valor proibitivo, o requerente foi multado e condenado por litigância de má-fé.
+Mesmo tendo apresentado provas de inconsistência no funcionamento das urnas, a perícia das mesmas não foi permitida.</p>
+                                <ul class="list-inline">
+                                    <li>Fontes:</li>
+                                    <li>Fernandes, C.T. - Radiografia das Urnas Eleitorais. S. J. dos Campos: ITA, dezembro de 2006.</li>
+                                    <li>1º Relatório do Comitê Multidisciplinar Independente - pg 27.</li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Assinaturas Divergentes - 2002 e 2008</h2>
+                                <p class="item-intro text-muted">Tabelas de Hash calculadas a portas fechadas e fora de uma cerimônia oficial.</p>
+                                <!-- <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt=""> -->
+                                <p>Nas eleições de 2º Turno de 2002 e 2008, foram detectadas durante verificação dos arquivos carregados nas urnas eletrônicas, a presença de um conjunto de arquivos com resumos digitais diferentes das publicadas nas respectivas cerimônias oficiais de lacramento dos sistemas. A providência tomada pelo administrador frente a estas descobertas, foi a de publicar novas Tabelas de Hash, calculadas a portas fechadas e fora de uma cerimônia oficial. A perícia das urnas foi indeferida e as Tabelas de Hash originais que demonstravam a impropriedade, foram removidas do local.</p>
+                                <ul class="list-inline">
+                                    <li>Fonte: 1º Relatório do Comitê Multidisciplinar Independente - pg 25.</li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Um.</h2>
+                                <p class="item-intro text-muted">O número de países que ainda utilizam a vulnerável urna de primeira geração.</p>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
+                                <p> VERMELHO - Países que ainda usam sistemas DRE de 1ª Geração (dependentes do software)</p>
+                                <ul>
+                                    <li>Brasil </li>
+                                </ul>
+                                <p>LARANJA - Países que testaram e abandonaram sistemas de 1ª Geração por falta de transparência ou falta de confiabilidade
+                                e, no momento, não estão usando votação eletrônica</p>
+
+                                <ul>
+                                    <li>Alemanha</li>
+                                    <li>Holanda</li>
+                                    <li>Irlanda</li>
+                                    <li>Inglaterra</li>
+                                    <li>Paraguai</li>
+                                  </ul>
+
+                                <p>AZUL - Países que abandonaram sistemas de 1ª Geração
+                                e passaram a usar sistemas VVPAT de 2ª Geração (independentes do software)</p>
+                                <ul>
+                                    <li>Bélgica</li>
+                                    <li>Russia</li>
+                                    <li>Índia</li>
+                                    <li>EUA</li>
+                                    <li>Canadá</li>
+                                    <li>México</li>
+                                    <li>Venezuela</li>
+                                    <li>Peru</li>
+                                    <li>Equador</li>
+                                    <li>Argentina</li>
+                                </ul>
+                                <p>VERDE - Países que adotaram ou estão testando sistemas E2E de 3ª Geração
+                                (independentes do software, com auditoria facilitada)</p>
+                                <ul>
+                                  <li>EUA (Takoma Park County)</li>
+                                  <li>Israel (Tel Aviv University)</li>
+                                  <li>Equador (Província de Azuay)</li>
+                                  <li>Argentina (Salta, Chaco, Córdoba, Santa Fé e Buenos Aires)</li>
+                                </ul>
+                                <ul class="list-inline">
+                                    <a href="http://www.brunazo.eng.br/voto-e/textos/modelosUE.htm"><li>Fonte:http://www.brunazo.eng.br/voto-e/textos/modelosUE.htm</li></a>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/tether/tether.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Cusotm JavaScript for this theme -->
+    <script src="js/agency.min.js"></script>
+
+</body>
+
+</html>
