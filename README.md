@@ -1,9 +1,9 @@
-# EtherVotes - Landing page
+# EtherVoltz - Landing page
 
-This repository holds the code for the [EtherVoltz](https://github.com/mtsalenc/ethervotes) dapp *landing* page.
+This repository holds the code for the [EtherVoltz](https://github.com/mtsalenc/ethervoltz) dapp *landing* page.
 It contains basic information about the project and will be updated on the future.
 
 # License
-MIT
+MIT. See [LICENSE.md] (https://github.com/mtsalenc/ethervoltz-landing/blob/master/LICENSE).
 # Acknowledgements
-Special thanks to Blackrock Digital for the initial design and code on which this website is based on.
+Special thanks to [Blackrock Digital] (https://github.com/BlackrockDigital) for code used on this website.
